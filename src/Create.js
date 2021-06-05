@@ -17,7 +17,7 @@ const Create = () => {
     const blog = { title, body, author };
 
     // SENDS post request to fake JSON rest api db
-    fetch('http://localhost:8000/blogs/', {
+    fetch('http://localhost:4000/blogs/', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog)
