@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 
 const useFetch = (url) => {
 
-
     // destructuring variables
     // using useState is best practice for inserting dynamic content
     const [data, setData] = useState(null);
