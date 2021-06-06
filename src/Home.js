@@ -6,7 +6,7 @@ const Home  = () => {
     
     // order does not matter for destructuring objects
     // getting custom hook value --> useFetch
-    const { error, isPending, data: blogs } = useFetch('http://localhost:4000/blogs')
+    const { error, isPending, data: blogs } = useFetch('https://myfirst-reactapp-dojoblog.herokuapp.com/blogs')
 
     return (  
         <div className="home">
