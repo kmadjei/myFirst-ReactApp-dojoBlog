@@ -1,4 +1,5 @@
-//404 redirect component
+//------------------404 redirect component-------------/
+
 import { Link } from "react-router-dom"
 
 const NotFound = () => {

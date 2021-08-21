@@ -1,23 +1,28 @@
-// useSTate hooks allows states to update form values dynamically
+// useState react Hook imported
 import { useState } from "react";
+// useHistory hook  from react router dom
 import { useHistory } from "react-router-dom";
 
 
 const Create = () => {
-  // useState Hooks
+  
+  // useSTate hooks allows states to update form values dynamically
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [author, setAuthor] = useState('mario');
   const [isPending, setIsPending] = useState(false);
+
+  //
   const history = useHistory();
 
   const handleSubmit = (e) => {
     // prevents form from submitting
+    // or page refreshing
     e.preventDefault();
     const blog = { title, body, author };
 
     // SENDS post request to fake JSON rest api db
-    fetch('https://myfirst-reactapp-dojoblog.herokuapp.com/blogs/', {
+    fetch('http://localhost:8000/blogs', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog)
@@ -25,8 +30,9 @@ const Create = () => {
       console.log('new blog added');
       setIsPending(false);
 
+      
+      // history.go(-1) --> previous page;
       //redirects to home page after form submission
-      // history.go(-1);
       history.push('/');
     })
   }
@@ -40,6 +46,9 @@ const Create = () => {
           type="text" 
           required 
           value={title}
+          /* updates Blog TItle  state 
+            "onChange" is a javascript dom event
+          */
           onChange={(e) => setTitle(e.target.value)}
         />
         <label>Blog body:</label>

@@ -5,7 +5,10 @@ const Navbar = () => {
         <nav className="navbar">
             <h1>The Dojo Blog</h1>
             <div className="links">
-                {/* Link intercepts url route request to server and handles it in the browser */}
+                {/*
+                    Link intercepts url route request to server and handles it in the browser
+                    "Link" is rendered as anchor tags for css elements 
+                 */}
                 <Link to="/">Home</Link>
                 <Link to="/create">New Blog</Link>
             </div>
