@@ -50,5 +50,5 @@ More features soon to come such as authentication and may be graphic animations.
 
 ### Acknowledgements
 
-- I  am grateful for @iamshaunjp valuable lessons he provides on his YouTube channel.
-- I also like to thank @@maxschwarzmueller for his lesson as well, especially introduction to Firebase for brief moment in his [React Crush Course](https://www.youtube.com/watch?v=Dorf8i6lCuk&ab_channel=Academind).
+- I  am grateful for [@iamshaunjp] valuable lessons he provides on his YouTube channel.
+- I also like to thank [@maxschwarzmueller] for his lesson as well, especially introduction to Firebase for brief moment in his [React Crush Course](https://www.youtube.com/watch?v=Dorf8i6lCuk&ab_channel=Academind).
