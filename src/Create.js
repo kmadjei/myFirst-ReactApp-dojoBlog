@@ -22,7 +22,11 @@ const Create = () => {
     const blog = { title, body, author };
 
     // SENDS post request to fake JSON rest api db
-    fetch('http://localhost:8000/blogs', {
+    fetch(
+        //'http://localhost:8000/blogs'
+        // Firebase Database API endpoint
+        'https://react-dojo-e473f-default-rtdb.firebaseio.com/blogs.json' 
+      , {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog)

@@ -27,6 +27,7 @@ const useFetch = (url) => {
         setTimeout(() => {
             fetch(url, {signal: abortCont.signal /*associating abortCont to this fetch */})
             .then(response => {
+                //console.log('RESPONSE:', response.json());
                 if (!response.ok) { 
                     // if error coming back from (response) is not okay
                     throw Error('could not fetch the data for that resource');
@@ -34,10 +35,29 @@ const useFetch = (url) => {
                 return response.json(); // response object
             })
             .then(data => {
+
+                //console.log('RESPONSE:', data);
+
+                // example from react crush course by academind YouTube
+                // https://github.com/academind/react-complete-guide-code/blob/zz-reactjs-summary/code/18-using-the-useeffect-hook/src/pages/AllMeetups.js
+                const updateData = [];
+                for (let key in data) {
+                    const update = {
+                        id: key,
+                        /*
+                            Spread syntax (...) allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
+                        */
+                        ...data[key]
+                    };
+                    updateData.push(update);
+                }
+                console.log(updateData);
+
+
                 //stops conditional loading msg from rendering when blog data is received
                 setIsPending(false);
                 // updates the state for "data"
-                setData(data);
+                setData(updateData);
                 // updates previous error to null
                 setError(null);
                 

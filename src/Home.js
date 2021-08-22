@@ -9,7 +9,11 @@ const Home  = () => {
     // order does not matter for destructuring objects {}
     // getting custom hook variables from useFetch.js
     //const { error, isPending, data: blogs } = useFetch('endpoint')
-    const { error, isPending, data: blogs } = useFetch('http://localhost:8000/blogs')
+    const { error, isPending, data: blogs } = useFetch( 
+        //'http://localhost:8000/blogs'
+        // Firebase Database API endpoint
+        'https://react-dojo-e473f-default-rtdb.firebaseio.com/blogs.json'
+    );
     /*
         for Local development run on CLI:
         >> npm start
