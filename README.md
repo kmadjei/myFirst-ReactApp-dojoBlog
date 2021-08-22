@@ -8,6 +8,7 @@ Below is a link for the project deployed to Heroku.
 
 ## Mockup
 
+<img src="https://github.com/kmadjei/myFirst-ReactApp-dojoBlog/blob/main/images/Dojoblogmockup.PNG?raw=true" alt="Mockup" max-width="500px" max-heigth="400px"> 
 
 ## Features
 
