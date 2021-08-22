@@ -75,7 +75,7 @@ const useFetch = (url) => {
                     setError(err.message);
                 }
             })
-        }, 1000);
+        }, 0);
 
         // abort the fetch when home component is unmounted from React DOM
         // stops the useEffect from still running after a React link has been clicked

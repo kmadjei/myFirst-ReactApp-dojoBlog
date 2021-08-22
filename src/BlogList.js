@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 /*
     { blogs } :
     >> Props passed to "BlogList" component from Home.js
-    >> destructed props for accessing blogs as blogs instead of "props.blogs"
+    >> destructed props for accessing "blogs" prop as blogs instead of using "props.blogs"
 */ 
 const BlogList = ({ blogs }) => {
     

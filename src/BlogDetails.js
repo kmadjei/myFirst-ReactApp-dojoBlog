@@ -22,7 +22,7 @@ const BlogDetails = () => {
   //The useHistory hook gives you access to the history instance that you may use to navigate.
   const history = useHistory();
 
-  // SENDS DELETE request to json db to
+  // SENDS DELETE request of the selected blog to the db
   const handleClick = (id) => {
     fetch(
         //'http://localhost:8000/blogs/' + blog.id

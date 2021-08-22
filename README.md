@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# React DojoBlog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+One or two paragraphs providing an overview of your project.
 
-## Available Scripts
+Essentially, this part is your sales pitch.
+👉 [Quick Preview](https://myfirst-reactapp-dojoblog.herokuapp.com/)
+ 
+## UX
+ 
+Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In the project directory, you can run:
+In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+- As a user type, I want to perform an action, so that I can achieve a goal.
 
-### `npm start`
+This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+ 
+### Existing Features
+- Feature 1 - allows users X to achieve Y, by having them fill out Z
+- ...
 
-### `npm test`
+For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
-### `npm run build`
+### Features Left to Implement
+- Another feature idea
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React JS](https://reactjs.org/)
+    - The project uses **React** v. 17 to build a reactive single page application with reusable components.
 
-### `npm run eject`
+- [JavaScript](https://www.w3schools.com/js/default.asp)
+    - **JavaScript** is used to provide dynamic contents for the project.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [CSS](https://www.w3schools.com/CSS/default.asp)
+    - The project uses **CSS** to create a visually pleasing UI.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Firebase](https://firebase.google.com/)
+    - **Firebase** realtime database is used for database management of the blog contents.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Testing
 
-## Learn More
+In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-### Code Splitting
+1. Contact form:
+    1. Go to the "Contact Us" page
+    2. Try to submit the empty form and verify that an error message about the required fields appears
+    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
+    4. Try to submit the form with all inputs valid and verify that a success message appears.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-### Analyzing the Bundle Size
+You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-### Making a Progressive Web App
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
-### Advanced Configuration
+In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+- Different values for environment variables (Heroku Config Vars)?
+- Different configuration files?
+- Separate git branch?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+In addition, if it is not obvious, you should also describe how to run your code locally.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Credits
 
-### `npm run build` fails to minify
+### Content
+- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Media
+- The photos used in this site were obtained from ...
+
+### Acknowledgements
+
+- I received inspiration for this project from X
+

@@ -1,6 +1,6 @@
 // useState react Hook imported
 import { useState } from "react";
-// useHistory hook  from react router dom
+// imported useHistory hook  from react router dom
 import { useHistory } from "react-router-dom";
 
 
@@ -12,7 +12,7 @@ const Create = () => {
   const [author, setAuthor] = useState('mario');
   const [isPending, setIsPending] = useState(false);
 
-  //
+
   const history = useHistory();
 
   const handleSubmit = (e) => {
@@ -21,7 +21,7 @@ const Create = () => {
     e.preventDefault();
     const blog = { title, body, author };
 
-    // SENDS post request to fake JSON rest api db
+    // SENDS post request to  db
     fetch(
         //'http://localhost:8000/blogs'
         // Firebase Database API endpoint
@@ -29,7 +29,8 @@ const Create = () => {
       , {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(blog)
+      // converts JavaScript array Object to string
+      body: JSON.stringify(blog) 
     }).then(() => {
       console.log('new blog added');
       setIsPending(false);
