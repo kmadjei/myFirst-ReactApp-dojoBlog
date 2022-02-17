@@ -1,6 +1,6 @@
 # React DojoBlog
 
-This is my first React walk-through project with Shaun, known as the NetNinja on YouTube. In this project I learn to build a simple blog sing page application using React-js. User's that visit the site can create, read, update and delete blogs.
+This is my first React walk-through project with Shaun, known as the NetNinja on YouTube. In this project I learn to build a simple blog single page application using React-js. User's that visit the site can create, read, update and delete blogs.
 
 Below is a link for the project deployed to Heroku.
 👉 [Quick Preview](https://myfirst-reactapp-dojoblog.herokuapp.com/)
